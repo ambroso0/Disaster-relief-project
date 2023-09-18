@@ -8,5 +8,8 @@ In this scenario, we are working towards developing a predictive model which wil
 The objective of this disaster relief initiative is to assess the performance of various algorithms when applied to imagery data collected during the 2010 earthquake relief efforts in Haiti. The primary aim is to identify the most accurate and timely method for locating as many displaced individuals as possible, based on the imagery data. 
 This project evaluates the effectiveness of several algorithms, including Logistic Regression, Linear Discriminant Analysis (LDA), Quadratic Discriminant Analysis (QDA), K-Nearest Neighbor (KNN), Penalized Logistic Regression, Random Forest, and Support Vector Machines (SVM). The evaluation is carried out using 10-fold cross-validation and a separate hold-out dataset. The dataset used for this analysis is sourced from the 'HaitiPixels.csv' file, which consists of three columns: 'Class', 'Red', 'Green', and 'Blue'. The 'Red', 'Green', and 'Blue' columns contain pixel data collected at various locations, while the 'Class' column categorizes objects found in the images, classifying them as 'vegetation', 'soil', 'rooftop', 'various non-tarp', or 'blue tarp'. In this project, the 'blue tarp' category from the 'Class' column serves as the response or outcome variable, while 'Red', 'Green', and 'Blue' are used as predictor variables. This dataset is utilized to assess the performance of the five different algorithms and identify the most effective one for predicting the presence of blue tarps.
 
+# Cross-validation performance table
+![image](https://github.com/ambroso0/Disaster-relief-project/assets/38117605/e2364858-9914-4b74-828e-9a85f3354071)
+
 
 
