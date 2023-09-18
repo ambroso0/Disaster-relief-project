@@ -11,5 +11,10 @@ This project evaluates the effectiveness of several algorithms, including Logist
 # Cross-validation performance table
 ![image](https://github.com/ambroso0/Disaster-relief-project/assets/38117605/e2364858-9914-4b74-828e-9a85f3354071)
 
+In this analysis, all the classification methods displayed remarkable effectiveness in categorizing blue tarp pixels based on their RGB values during training via 10-fold cross-validation. The performance of the logistic regression and penalized logistic regression models was quite similar, which is logical given that the optimal lambda value was zero, implying no significant predictor reduction.
+However, the discriminant analysis (LDA/QDA) models lagged behind the top-performing models, particularly in terms of specificity and FDR. Among all the models, the LDA model exhibited the highest False Positive Rate (FPR) and the lowest accuracy. On the other hand, the K-Nearest Neighbor (KNN) model showcased one of the highest accuracy values and the lowest FPR.
+
+Upon scrutinizing the data table, it became evident that Random Forest (RF) emerged as the most promising option. The RF model boasted the highest accuracy and the lowest FPR. It's important to note that the metrics for RF were computed without employing a test dataset. The true potential of RF for blue tarp classification will be assessed when testing the model against the hold-out dataset.
 
 
+*Full report and code can be provided upon request. 
